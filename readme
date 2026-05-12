@@ -1,0 +1,52 @@
+cat <<EOF > README.md
+# SMS Spam Classifier 
+
+A Machine Learning project that classifies SMS messages as **Ham** (legitimate) or **Spam** using Natural Language Processing (NLP) and Naive Bayes algorithms.
+
+##  Overview
+This project involves building an end-to-end machine learning pipeline to detect spam messages. It includes data cleaning, exploratory data analysis (EDA), text preprocessing (stemming, stopword removal), and model building.
+
+##  Tech Stack
+- **Language:** Python
+- **Libraries:** Pandas, NumPy, Scikit-learn, NLTK, Matplotlib, Seaborn, WordCloud
+- **Algorithms:** Multinomial Naive Bayes (Best performing), Gaussian NB, Bernoulli NB
+- **Vectorization:** TF-IDF Vectorizer
+
+##  Features
+- **Data Cleaning:** Handles missing values and removes duplicates.
+- **EDA:** Visualizes the distribution of spam vs. ham using pie charts and histograms.
+- **Text Preprocessing:** 
+    - Lowercase conversion
+    - Tokenization
+    - Removal of special characters, stopwords, and punctuation
+    - Stemming (using PorterStemmer)
+- **Modeling:** Compares multiple Naive Bayes classifiers to find the highest precision model.
+- **Persistence:** Saves the trained model and vectorizer using \`pickle\` for deployment.
+
+## 📊 Performance
+The **Multinomial Naive Bayes** with **TF-IDF Vectorization** (max_features=3000) was chosen as the final model due to its high precision score.
+
+## 📂 Project Structure
+\`\`\`text
+├── spam.csv                # Raw Dataset
+├── vectorizer.pkl          # Saved TF-IDF Vectorizer
+├── model.pkl               # Saved MultinomialNB Model
+├── spam_classifier.ipynb   # Script
+└── README.md               # Project Documentation
+\`\`\`
+
+## How to Run
+1. **Clone the repo:**
+   \`\`\`bash
+   git clone https://github.com/yourusername/sms-spam-classifier.git
+   \`\`\`
+2. **Install dependencies:**
+   \`\`\`bash
+   pip install pandas numpy scikit-learn nltk matplotlib seaborn wordcloud
+   \`\`\`
+3. **Run the script:**
+   Execute the python file or Jupyter notebook to train the model and generate the \`.pkl\` files.
+
+## Author
+**Your Name**
+EOF
