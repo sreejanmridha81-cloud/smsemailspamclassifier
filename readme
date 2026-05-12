@@ -38,7 +38,7 @@ The **Multinomial Naive Bayes** with **TF-IDF Vectorization** (max_features=3000
 ## How to Run
 1. **Clone the repo:**
    \`\`\`bash
-   git clone https://github.com/yourusername/sms-spam-classifier.git
+   git clone sreejanmridha81-cloud/smsemailspamclassifier
    \`\`\`
 2. **Install dependencies:**
    \`\`\`bash
